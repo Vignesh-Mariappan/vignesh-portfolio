@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Palanquin&display=swap');
 
-body {
-/*   padding: 2rem; */
-}
+/* body {
+  padding: 2rem;
+} */
 
 .wrapper {
   padding: 2rem;
@@ -16,8 +16,6 @@ h2 {
   font-weight: 300;
   color: whitesmoke;
   border-radius: 10px;
-  // margin: 0 3.5rem;
-  // margin: auto;
 }
 
 header {
@@ -122,19 +120,22 @@ footer {
   margin: 0;
   display: flex;
   justify-content: flex-start;
-  gap: 2rem;
+}
+
+footer a {
+  cursor: pointer;
+  padding-right: 2rem;
 }
 
 footer i {
-  pointer: cursor;
   font-size: 36px;
-   color: whitesmoke;"
+   color: whitesmoke;
 }
 
-@media screen and (max-width 1330px) {
+@media screen and (max-width: 1330px) {
   .skills-container {
     flex-direction: column;
-    margin: 0;;
+    margin: 0;
   }
 
   .skill {margin: 0!important;}
@@ -155,7 +156,7 @@ footer i {
   .item:nth-child(2) { margin: 1rem 0 0 0; }
 }
 
-@media screen and (max-width 690px) {
+@media screen and (max-width: 690px) {
   .skills-container {
     justify-content: space-evenly;
   }
