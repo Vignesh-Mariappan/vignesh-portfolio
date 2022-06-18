@@ -177,4 +177,8 @@ footer i {
   .skills-container {
     justify-content: center;
   }
+
+  .skill {
+    margin: 1rem 0;
+  }
 }
