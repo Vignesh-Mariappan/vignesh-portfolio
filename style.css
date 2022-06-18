@@ -135,12 +135,11 @@ footer i {
 }
 
 @media screen and (max-width: 1330px) {
-  .skills-container {
-    flex-direction: column;
-    margin: 0;
+  .skills-container { 
+    margin: 2rem 0;
   }
 
-  .skill {margin: 0;}
+  .skill {margin: 1rem;}
 }
 
 @media screen and (max-width: 1150px) {
@@ -184,7 +183,6 @@ footer i {
   .skills-container {
     margin-top: 2rem;
     align-items: center;
-    justify-content: center;
   }
 
   .skill {
