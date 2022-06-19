@@ -24,7 +24,8 @@ header {
   padding: 2rem;
   margin: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;;
   padding-bottom: 2rem;
   color: whitesmoke;
   align-items: center;
@@ -32,6 +33,14 @@ header {
 
 header h1 {
     font-family: 'Palanquin', sans-serif;
+    padding-left: 20px;
+}
+
+header img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .container, .skills-container {
@@ -117,12 +126,14 @@ h3, strong { color: #006097; }
 
 footer {
   width: 100%;
-  height: 100px;
+  height: 150px;
   background-color: #006097;
   padding: 2rem;
   margin: 0;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 footer a {
@@ -164,11 +175,21 @@ footer i {
   .skills-container {
     justify-content: space-evenly;
   }
+
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  header .title {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 540px) {
   .wrapper {
     padding: 1rem;
+    padding-top: 2rem;
   }
 
   .item { width: 100%; }
@@ -178,7 +199,7 @@ footer i {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 435px) {
   header h1 {
     font-size: 1.5rem;
   }
@@ -190,5 +211,14 @@ footer i {
 
   .skill {
     margin: 1rem 0;
+  }
+
+  header img {
+    width: 75px;
+    height: 75px;
+  }
+
+  footer a {
+    padding-right: 1rem;
   }
 }
