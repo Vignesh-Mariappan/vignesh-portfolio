@@ -114,6 +114,54 @@ h3, strong { color: #006097; }
   border-radius: 10px;
 }
 
+.certifications-container {
+  margin: 2rem 0 .5rem 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+.certificate {
+  background-color: #27ae60;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  /* width: 310px; */
+  flex: 1;
+  min-width: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: .5rem;
+}
+
+.certificate a {
+  color:inherit;
+}
+
+/* .certificate-black {
+  background-color: #272727;
+  color: white;
+}
+
+.certificate-black a {
+  color:inherit;
+} */
+
+.certificate .fa-trophy {
+  font-size: 2rem;
+}
+
+.certificate-title {
+  font-weight: bolder;
+}
+
+.certificate-link {
+  color: #006097!important;
+}
+
 .skill {
   display: flex;
   flex-direction: column;
@@ -169,7 +217,12 @@ footer i {
   .item:nth-child(1) { margin: 2rem 0 0 0; }
 
   .item:nth-child(2) { margin: 1rem 0 0 0; }
+
+  /* .certificate {
+    width: 450px;
+  } */
 }
+
 
 @media screen and (max-width: 690px) {
   .skills-container {
@@ -186,7 +239,7 @@ footer i {
   }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 630px) {
   .wrapper {
     padding: 1rem;
     padding-top: 2rem;
